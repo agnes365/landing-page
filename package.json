@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "init-project": "npm install && mkdirp sass css && touch readme.md index.html sass/style.scss && curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "init-project": "npm install && mkdirp sass css vendor && touch readme.md index.html sass/style.scss && curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "test": "html-validate *.html",
     "build": "node-sass --output-style compact -o css sass && npm run test",
     "watch": "npm run build && browser-sync start --server --files \"css/*.css\" \"*.html\" && onchange sass/*.scss -- npm run build"
