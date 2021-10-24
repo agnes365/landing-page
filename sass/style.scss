@@ -1,0 +1,94 @@
+/* Variables */
+$font-first: "EB Garamond", serif;
+$font-secend: "Libre Baskerville", serif;
+$color-one: #fed336;
+$color-two: #c9d4d2;
+$font-color-light: #ffffff;
+$font-color-dark: #0c0c0e;
+/*Global*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.splash {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/oksy.jpg");
+    background-size: cover;
+    display: block;
+    padding-top: 20px;
+    color: $font-color-light;
+    z-index: -2;
+}
+
+.splash::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #000;
+    z-index: -1;
+}
+
+.splash .row {
+    margin-top: 20px;
+}
+
+.navigation {
+    font-size: 16px;
+    font-family: $font-first;
+    width: fit-content;
+    float: right;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+    position: relative;
+}
+
+.splash h1,
+h3 {
+    text-align: center;
+}
+
+.btn {
+    padding: 20px 30px;
+    background-color: $color-one;
+    display: block;
+    border-radius: 5px;
+    width: fit-content;
+    color: $font-color-light;
+    text-decoration: none;
+    font-weight: 600;
+}
+.splash .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+.splash h3 {
+    margin-top: 15rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.splash h1 {
+    font-size: 4.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
