@@ -49,6 +49,10 @@ body {
     width: fit-content;
     float: right;
 }
+.navigation a {
+    text-decoration: none;
+    color: $font-color-light;
+}
 
 .navigation ul {
     padding: 0;
