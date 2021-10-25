@@ -1,8 +1,8 @@
 /* Variables */
-$font-first: "EB Garamond", serif;
+$font-first: "Secular One", sans-serif;
 $font-secend: "Libre Baskerville", serif;
 $color-one: #fed336;
-$color-two: #c9d4d2;
+$color-two: #858887;
 $font-color-light: #ffffff;
 $font-color-dark: #0c0c0e;
 /*Global*/
@@ -72,7 +72,7 @@ h3 {
 }
 
 .btn {
-    padding: 20px 30px;
+    padding: 20px 50px;
     background-color: $color-one;
     display: block;
     border-radius: 5px;
@@ -80,6 +80,7 @@ h3 {
     color: $font-color-light;
     text-decoration: none;
     font-weight: 600;
+    font-family: $font-first;
 }
 .splash .btn {
     margin-left: auto;
@@ -88,11 +89,95 @@ h3 {
 .splash h3 {
     margin-top: 15rem;
     font-size: 2.5rem;
+    font-family: $font-secend;
+    font-style: italic;
     font-weight: 100;
     margin-bottom: 0;
 }
 .splash h1 {
     font-size: 4.5rem;
+    font-family: $font-first;
+    font-weight: 100;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 100;
+    font-family: $font-first;
+    margin-bottom: 0;
+}
+.section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $color-two;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.services .icon {
+    margin: auto;
+    width: 88px;
+    height: 88px;
+    color: $color-one;
+    border: 4px solid $color-one;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.services .icon i {
+    margin-top: 10px;
+}
+
+.services-name {
+    font-size: 1.2rem;
+    font-family: $font-first;
+    font-weight: 100;
+    text-align: center;
+}
+
+.services-text {
+    color: $color-two;
+    text-align: center;
+}
+
+.portfolio {
+    background: #edf0ef;
+}
+
+.card-name {
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: $font-first;
+    text-align: center;
+    margin: 0;
+    background-color: #ffffff;
+    padding-top: 15px;
+}
+.card-text {
+    color: $color-two;
+    font-family: $font-secend;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    background-color: #ffffff;
+    padding-bottom: 15px;
+}
+.card {
+    padding: 10px;
+}
+.card-image {
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
